@@ -6,7 +6,7 @@ pipeline {
                 git branch: 'Python', url: 'https://github.com/tamim-hmizi/Agent-Per-Lang-Jenkins.git'
             }
         }
-        stage('Runing main.py') {
+        stage('Running main.py') {
             steps {
                 sh 'python3 main.py'
             }
