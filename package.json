@@ -1,0 +1,12 @@
+{
+  "name": "agent-per-lang-jenkins",
+  "version": "1.0.0",
+  "description": "running projects with different language on the same jenkins machine and letting it choose the appropriate agent for the build.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
