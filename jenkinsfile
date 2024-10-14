@@ -8,7 +8,7 @@ pipeline {
                 git branch: 'JS', url: 'https://github.com/tamim-hmizi/Agent-Per-Lang-Jenkins.git'
             }
         }
-        stage('Install Dependencies') {
+        stage('Running index.js') {
             steps {
                 sh 'node index.js'
             }
