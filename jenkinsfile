@@ -1,0 +1,16 @@
+pipeline {
+    agent any // This specifies to run on the master Jenkins node
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'Python', url: 'https://github.com/tamim-hmizi/Agent-Per-Lang-Jenkins.git'
+            }
+        }
+        stage('Runing main.py') {
+            steps {
+                sh 'python3 main.py'
+            }
+        }
+        
+    }
+}
