@@ -1,0 +1,17 @@
+pipeline {
+    agent {
+        label 'dockeragent' 
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'JS', url: 'https://github.com/tamim-hmizi/Agent-Per-Lang-Jenkins.git'
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                sh 'node index.js'
+            }
+        }
+    }
+}
