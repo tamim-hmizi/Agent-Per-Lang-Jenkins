@@ -1,5 +1,5 @@
 pipeline {
-    agent any // This specifies to run on the master Jenkins node
+    agent any 
     stages {
         stage('Checkout') {
             steps {
